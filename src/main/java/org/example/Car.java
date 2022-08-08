@@ -1,0 +1,49 @@
+package org.example;
+
+import java.util.HashMap;
+
+public class Car {
+    public int id;
+    public String brand, model;
+    public HashMap<Integer, String> carHM = new HashMap<>();
+
+    public Car(int id, String brand, String model) {
+        this.id = id;
+        this.brand = brand;
+        this.model = model;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", carHM=" + carHM +
+                '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+}
